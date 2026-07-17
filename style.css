@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #313338;
   margin: 0;
@@ -5,7 +9,8 @@ body {
 }
 
 h1 {
-  color: red;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
 
@@ -13,6 +18,7 @@ p {
   font-family: verdana;
   font-size: 20px;
   text-align: center;
+  color: gold;
 }
 
 img {
@@ -30,6 +36,7 @@ img {
   margin: 10px;
   padding: 30px;
   display: flex;
+  background-image: linear-gradient(to bottom right, black, #313338);
 }
 
 .top a {
@@ -72,4 +79,37 @@ img {
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: xx-large;
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+.cbox {
+  img {
+    display: block;
+    width: 10%;
+  }
+  border: 1px solid black;
+  position: relative;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 20%;
+  min-width: 10%;
+  background-color: gray;
+  transition: .5s;
+}
+
+.cbox:hover {
+  transform: scale(105%);
+}
+
+h4 {
+  text-align: center;
 }
